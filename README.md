@@ -30,7 +30,7 @@ This project provides a powerful tool for developers to streamline their debuggi
 ## Installation Instructions
 
 1. **Prerequisites:**
-    - Python 3.x: https://www.python.org/downloads/](https://www.python.org/downloads/
+    - Python 3: https://www.python.org
     - Required libraries:
       - ```pip install requirements.txt```
       - Obtain a Google API key: https://makersuite.google.com/app/apikey
