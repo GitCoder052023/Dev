@@ -8,7 +8,6 @@ setup(
     description='A tool to debug your code using AI',
     packages=find_packages(),  # Automatically find packages in the directory
     install_requires=[
-        'time',
         'pyperclip',
         'langchain_google_genai',
         'pyautogui',
