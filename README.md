@@ -67,7 +67,7 @@ This project provides a powerful tool for developers to streamline their debuggi
 
 ## Sample code
 ```python
-from Debugger import self_debugger
+from Debugger.Debugger import self_debugger
 from key import key # please create a new python file "key" then paste your key inside their 
 
 debugger = self_debugger.Debugger(key) # you can directly paste your api key
