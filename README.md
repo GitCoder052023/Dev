@@ -32,7 +32,7 @@ This project provides a powerful tool for developers to streamline their debuggi
 1. **Prerequisites:**
     - Python 3: https://www.python.org
     - Required libraries:
-      - ```pip install requirements.txt```
+      - ```pip install -r requirements.txt```
       - Obtain a Google API key: https://makersuite.google.com/app/apikey
 
 2. **Clone or Download:**
