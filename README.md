@@ -82,6 +82,3 @@ try:
 except Exception as e:
     self_debugger.Debugger(e)
 ```
-
-
-**Contribute:** Feel free to contribute to this project by opening issues or pull requests!
