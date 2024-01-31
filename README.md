@@ -37,7 +37,8 @@ This project provides a powerful tool for developers to streamline their debuggi
 
 2. **Clone or Download:**
     - Clone this repository: `git clone https://github.com/GitCoder052023/Debugger`
-    - Or download the code as a ZIP file.
+    - Download requirements: `pip install -r requirements.txt`
+   ---
     - Download this package locally
       ```bash
       pip install git+https://github.com/GitCoder052023/Debugger.git
