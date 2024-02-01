@@ -203,7 +203,7 @@ from Dev.Developer import Dev
 2: Create a Dev Instance:
 
 ```Python
-dev = Dev(your-key)
+dev = Dev.Dev(your-key)
 ```
 
 3: Rename your repository:
@@ -219,6 +219,9 @@ from Dev.Developer import Dev
 from key import key
 
 dev = Dev.Dev(key)
+
+dev.rename_github_repo("my-old-repo", "my-new-repo)
+```
 
 ## Create GitHub Repo:
 
