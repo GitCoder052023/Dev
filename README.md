@@ -37,17 +37,27 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - Streamlined Workflow: Integrate seamlessly with Git for effortless project management, allowing you to focus on what matters most - writing great code.
 
 ## Getting Started:
+**Clone repo:**
+1: clone repo
+```bash
+git clone https://github.com/GitCoder052023/Dev.git
+```
 
-1: Install the required libraries:
+2: Install the required libraries:
 
 ```Bash
 pip install -r requirements.txt
 ```
 
-2: Obtain a Google API key for Google Generative AI and set it as an environment variable:
+3: Obtain a Google API key for Google Generative AI and set it as an environment variable:
 
 ```Bash
 export GOOGLE_API_KEY=YOUR_API_KEY
+```
+
+**Download package locally:**
+```bash
+pip install git+https://github.com/GitCoder052023/Dev.git
 ```
 
 Dev is your comprehensive coding companion. Whether you're a seasoned developer looking for a productivity boost or a beginner seeking guidance, Dev has something to offer. Embrace the power of AI and watch your coding workflow reach new heights of efficiency and effectiveness.
