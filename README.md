@@ -1,4 +1,3 @@
-
 # Dev: Your AI-Powered Coding Assistant
 
 Dev is a multi-purpose tool designed to streamline your coding workflow and leverage the power of large language models to enhance your productivity. It automates several common tasks and provides valuable insights through AI capabilities, making your coding experience smoother and more efficient.
@@ -28,6 +27,8 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - In-depth Code Review: Unsure about your code's quality? Dev provides a detailed code review, highlighting potential improvements, optimizations, and areas for consideration. This valuable feedback can elevate your code to the next level.
 
 - Seamless Git Integration: Dev simplifies project management by automating Git commands. You can easily create and upload repositories, rename existing ones, and push your code with just a few function calls.
+  
+- Tired of manually crafting requirements.txt and setup.py files for your Python projects? Dev takes care of these essential tasks with a few simple commands, saving you time and ensuring accuracy.
 
 ## Benefits of Dev:
 
@@ -328,3 +329,38 @@ dev.review()
 
 print("Your code review is saved in 'review.txt'!")
 ```
+
+## Generate Requirements Files:
+
+**Key Features:**
+
+- Automatically analyzes your code to identify required dependencies.
+- Creates a comprehensive requirements.txt file listing those dependencies.
+- Ensures compatibility and reproducibility for project setup.
+
+**Usage:**
+
+```Python
+dev.generate_requirements()
+```
+
+**Output:**
+A requirements.txt file is generated in your project directory, ready for use.
+
+## Generate Setup Files:
+
+**Key Features:**
+
+- Automates the creation of setup.py files for Python projects.
+- Streamlines the packaging and distribution process.
+- Simplifies installation for others who want to use your project.
+
+**Usage:**
+
+```Python
+dev.generate_setup()
+```
+
+**Output:**
+A setup.py file is generated in your project directory, ready for deployment.
+
