@@ -14,9 +14,9 @@ def remove_first_and_last_lines(paragraph):
 # Retrieve text from clipboard
 
 class Dev:
-    def __init__(self, key):
+    def __init__(self, key, temperature=0.5):
         self.api_key = key
-        self.llm = GoogleGenerativeAI(model="gemini-pro", google_api_key=key)
+        self.llm = GoogleGenerativeAI(model="gemini-pro", google_api_key=key, temperature=temperature)
         pass
 
     def debugger(self, error, prompt=None):
@@ -204,3 +204,39 @@ class Dev:
         with open(filename, "w") as file:
             # Optionally, write some content to the file
             file.write(sd)
+
+    def Generate_UI(self):
+        # get code
+        pyautogui.hotkey("ctrl", "a")
+        pyautogui.hotkey("ctrl", "c")
+        time.sleep(0.1)
+        copied_text = pyperclip.paste()
+
+        cd = self.llm.invoke(f"Read this backend code {copied_text}, and analyze this code, and Please write HTML with "
+                             f"inline css for my this code,"
+                             f"and make sure that write code which connects this backend code into itself")
+
+        filename = "index.html"
+
+        with open(filename, "w") as file:
+            # Optionally, write some content to the file
+            file.write(cd)
+
+        time.sleep(3)
+
+        pyautogui.hotkey("ctrl", "F2")
+
+    def Explain(self, mode="detail"):
+        pyautogui.hotkey("ctrl", "a")
+        pyautogui.hotkey("ctrl", "c")
+        time.sleep(0.1)
+        copied_text = pyperclip.paste()
+
+        cd = self.llm.invoke(
+            f"Read this code {copied_text}, and analyze this code, and please explain this code in {mode}")
+
+        filename = "explanation.txt"
+
+        with open(filename, "w") as file:
+            # Optionally, write some content to the file
+            file.write(cd)
