@@ -173,3 +173,32 @@ class Dev:
             # Optionally, write some content to the file
             file.write(rv)
 
+    def generate_requirements(self):
+        # get code
+        pyautogui.hotkey("ctrl", "a")
+        pyautogui.hotkey("ctrl", "c")
+        time.sleep(0.1)
+        copied_text = pyperclip.paste()
+
+        rd = self.llm.invoke(f"write requirements.txt file for this code: {copied_text}")
+
+        filename = "requirements.txt"
+
+        with open(filename, "w") as file:
+            # Optionally, write some content to the file
+            file.write(rd)
+
+    def generate_setup(self):
+        # get code
+        pyautogui.hotkey("ctrl", "a")
+        pyautogui.hotkey("ctrl", "c")
+        time.sleep(0.1)
+        copied_text = pyperclip.paste()
+
+        rd = self.llm.invoke(f"write setup.py file for this: {copied_text}")
+
+        filename = "setup.py"
+
+        with open(filename, "w") as file:
+            # Optionally, write some content to the file
+            file.write(rd)
