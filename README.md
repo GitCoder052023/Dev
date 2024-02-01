@@ -41,7 +41,7 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 1: Install the required libraries:
 
 ```Bash
-pip install pyperclip langchain_google_genai pyautogui paperclip
+pip install -r requirements.txt
 ```
 
 2: Obtain a Google API key for Google Generative AI and set it as an environment variable:
