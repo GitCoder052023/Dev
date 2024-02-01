@@ -181,12 +181,13 @@ class Dev:
         copied_text = pyperclip.paste()
 
         rd = self.llm.invoke(f"write requirements.txt file for this code: {copied_text}")
+        sd = remove_first_and_last_lines(rd)
 
         filename = "requirements.txt"
 
         with open(filename, "w") as file:
             # Optionally, write some content to the file
-            file.write(rd)
+            file.write(sd)
 
     def generate_setup(self):
         # get code
@@ -196,9 +197,10 @@ class Dev:
         copied_text = pyperclip.paste()
 
         rd = self.llm.invoke(f"write setup.py file for this: {copied_text}")
+        sd = remove_first_and_last_lines(rd)
 
         filename = "setup.py"
 
         with open(filename, "w") as file:
             # Optionally, write some content to the file
-            file.write(rd)
+            file.write(sd)
