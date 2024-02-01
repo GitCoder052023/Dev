@@ -275,16 +275,13 @@ from Dev.Developer import Dev
 2: reate a Dev Instance:
 
 ```Python
-dev = Dev(your-key)
+dev = Dev.Dev(your-key)
 ```
 
 3: Generate code based on a prompt:
 
 ```Python
-dev.generate("Write a function to reverse
-dev.rename_github_repo("my-first-try", "dev-tool-masterpiece")
-
-print("Your repository name has been changed!")
+dev.generate("create a python code to print 0 to 100")
 ```
 
 ## Review
