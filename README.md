@@ -4,16 +4,11 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 
 # Table of Contents
 
-- [Dev: Your AI-Powered Coding Assistant](#dev-your-ai-powered-coding-assistant)
-- [Features of Dev](#features-of-dev)
-  - [AI-powered Debugging](#ai-powered-debugging)
-  - [Automated README Generation](#automated-readme-generation)
-  - [Creative Code Generation](#creative-code-generation)
-  - [In-depth Code Review](#in-depth-code-review)
-  - [Seamless Git Integration](#seamless-git-integration)
-- [Benefits of Dev](#benefits-of-dev)
-- [Getting Started](#getting-started)
-- [Deep Dive in Dev](#deep-dive-in-dev)
+- [Dev: Your AI-Powered Coding Assistant](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#dev-your-ai-powered-coding-assistant)
+- [Features of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#features-of-dev)
+- [Benefits of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#benefits-of-dev)
+- [Getting Started](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#getting-started)
+- [Deep Dive in Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#deep-dive-in-dev)
 
 
 ## Features of Dev:
