@@ -25,6 +25,10 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
   
 - Tired of manually crafting requirements.txt and setup.py files for your Python projects? Dev takes care of these essential tasks with a few simple commands, saving you time and ensuring accuracy.
 
+- Tired of manually crafting UI interfaces for your backend code? Dev takes care of the heavy lifting, effortlessly creating a matching user interface with integrated backend functionality.
+
+- Seeking a comprehensive understanding of your code? Dev offers clear and insightful explanations, tailored to your preferred level of detail.
+
 ## Benefits of Dev:
 
 - Increased Productivity: Automate repetitive tasks like debugging and README generation, freeing up your time for more focused development.
@@ -360,3 +364,66 @@ dev.generate_setup()
 **Output:**
 A setup.py file is generated in your project directory, ready for deployment.
 
+## Explain:
+
+**Key Features:**
+- Code Analysis: Thoroughly examines your code to grasp its purpose and functionality.
+- Customized Explanations: Provides explanations in either detail or summary mode, adapting to your specific needs.
+- Clear Documentation: Generates a text file containing the explanation, allowing for easy reference and sharing.
+
+**Usage:**
+
+1: Import the Dev Class:
+
+```Python
+from Dev.Developer import Dev
+```
+
+2: Create a Dev Instance:
+
+```Python
+dev = Dev.Dev(your-key)
+```
+
+```Python
+dev.Explain(mode="detail")  # For a detailed explanation
+dev.Explain(mode="summary")  # For a concise summary
+```
+
+**Output:**
+
+A new explanation.txt file containing the generated explanation will be created.
+Open the file to delve into the depths of your code's functionality.
+
+
+## Generate UI:
+
+**Key Features:**
+- Automatic Code Analysis: Intelligently examines your backend code to understand its structure and logic.
+- UI Generation with CSS: Seamlessly produces a corresponding HTML file with integrated CSS, ensuring a visually appealing and well-formatted interface.
+- Backend Integration: Cleverly connects the generated UI with your backend code, ensuring seamless communication and functionality.
+
+**Usage:**
+
+1: Import the Dev Class:
+
+```Python
+from Dev.Developer import Dev
+```
+
+2: Create a Dev Instance:
+
+```Python
+dev = Dev.Dev(your-key)
+```
+
+3: Generate the UI:
+
+```Python
+dev.Generate_UI()
+```
+
+**Output:**
+
+A new index.html file containing the generated UI with inline CSS will be created.
+The file will automatically open in your default browser for immediate preview.
