@@ -52,6 +52,7 @@ pip install -r requirements.txt
 
 3: Obtain a Google API key for Google Generative AI and set it as an environment variable:
 
+Get your google gemini API key from [here](https://makersuite.google.com/app/apikey)
 ```Bash
 export GOOGLE_API_KEY=YOUR_API_KEY
 ```
