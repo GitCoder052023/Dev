@@ -64,8 +64,6 @@ pip install git+https://github.com/GitCoder052023/Dev.git
 Dev is your comprehensive coding companion. Whether you're a seasoned developer looking for a productivity boost or a beginner seeking guidance, Dev has something to offer. Embrace the power of AI and watch your coding workflow reach new heights of efficiency and effectiveness.
 
 # Ongoing Developments
-- **Modify:** I am working on new functionality of Dev which can able to modify user's code based on custom prompt
-- **Translate:** I have a plan to create a functionality for Dev which can translates python codes in Java, JavaScript, C, C++
 - **API Generator:** **(UNDER PLANNING)**
 
 # Deep Dive in Dev:
