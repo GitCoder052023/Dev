@@ -252,7 +252,7 @@ class Dev:
 
         # clear previous code
         pyautogui.hotkey("ctrl", "a")
-        pyautogui.press('backspace')
+        pyautogui.press('/')
 
         # reformat code
         rcd = remove_first_and_last_lines(mcd)
