@@ -240,3 +240,51 @@ class Dev:
         with open(filename, "w") as file:
             # Optionally, write some content to the file
             file.write(cd)
+
+    def modify(self, prompt):
+        pyautogui.hotkey("ctrl", "a")
+        pyautogui.hotkey("ctrl", "c")
+        time.sleep(0.1)
+        copied_text = pyperclip.paste()
+
+        mcd = self.llm.invoke(f"""{prompt}, this is a code: {copied_text}
+                        """)
+
+        # clear previous code
+        pyautogui.hotkey("ctrl", "a")
+        pyautogui.press('backspace')
+
+        # reformat code
+        rcd = remove_first_and_last_lines(mcd)
+
+        # write modified code
+        pyautogui.write(rcd)
+
+        # finally format code
+        pyautogui.hotkey("ctrl", "alt", "l")
+        pyautogui.hotkey("ctrl", "alt", "shift", "l")
+        pyautogui.press("enter")
+
+    def trans(self, filename, target: str = "Java"):
+        # get code
+        pyautogui.hotkey("ctrl", "a")
+        pyautogui.hotkey("ctrl", "c")
+        time.sleep(0.1)
+        copied_text = pyperclip.paste()
+
+        # debug code
+        mcd = self.llm.invoke(f"""you are a greate programmer, and you have a job to catch the motive of given code 
+                        and then translate given code in target language and note that do not write anything else except code I mean do not write explanations 
+                        but you can write explanation those changes which you make using comments in your code
+                        and other things, this is a code: {copied_text}
+                            target language is {target}
+                                """)
+
+        # reformat code
+        rcd = remove_first_and_last_lines(mcd)
+
+        filename = filename
+
+        with open(filename, "w") as file:
+            # Optionally, write some content to the file
+            file.write(rcd)
