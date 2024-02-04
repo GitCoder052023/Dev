@@ -11,7 +11,7 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - [Deep Dive in Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#deep-dive-in-dev)
 
 
-## Features of Dev:
+## Unique Features of Dev:
 
 - AI-powered Debugging: Stuck on a coding bug? Dev can analyze your code with the help of a large language model, identify the error, and suggest corrections. Simply provide the error message or a specific prompt for tailored debugging assistance.
 
@@ -432,3 +432,93 @@ dev.Generate_UI()
 
 A new index.html file containing the generated UI with inline CSS will be created.
 The file will automatically open in your default browser for immediate preview.
+
+---
+# Beta Functions
+
+## Modify:
+This functionality empowers you to directly modify your code within your code editor, leveraging the power of large language models for enhanced efficiency and quality.
+
+**Key Features:**
+
+- Prompted Code Modification: Provide specific instructions or ask questions about your code, and the AI will suggest modifications directly within your editor.
+- Code Understanding: The language model analyzes the context and structure of your code, ensuring modifications are relevant and maintain functionality.
+- Automatic Formatting: Preserves the original code formatting while applying changes, maintaining code readability.
+
+**How it Works:**
+
+- Provide a prompt: Type your desired changes or questions in the Dev interface.
+- AI analyzes and suggests: Dev utilizes Google's Gemini Pro language model to generate modifications.
+- Code is updated: The modified code is automatically inserted into your editor, replacing the original selection.
+- Formatting retained: The code retains its original formatting for a seamless transition.
+
+**Benefits:**
+
+- Save time: Quickly iterate and experiment with code modifications without manual editing.
+- Improve code quality: Gain valuable insights and suggestions for cleaner, more efficient code.
+- Boost creativity: Explore new possibilities and approaches with AI-powered guidance.
+
+**Example Usage:**
+
+Prompt: "Make this function more efficient by using a list comprehension."
+
+**Original Code:**
+```python
+def calculate_sum(numbers):
+  total = 0
+  for num in numbers:
+    total += num
+  return total
+```
+
+**Modified code**
+```python
+def calculate_sum(numbers):
+  return sum(numbers)
+```
+
+## Trans:
+
+This feature allows you to effortlessly translate your code into different programming languages, powered by the intelligence of large language models.
+
+**Key Features:**
+
+- Supports multiple languages: Translate your code between various languages, including Java, JavaScript, C, C++.
+- Preserves code functionality: The translation process aims to maintain the original code's functionality and behavior.
+- Clear and concise output: The translated code is saved in new file.
+
+**How it Works:**
+
+- Choose the target language: Specify the language you want to translate the code into.
+- Initiate translation: Trigger the Dev trans function.
+- AI analyzes and translates: Dev utilizes Google's Gemini Pro language model to understand and translate the code.
+- Translated code generated: The translated code is displayed in the Dev interface or saved to a specified file.
+
+**Benefits:**
+
+- Effortless code reuse: Adapt your code to different environments and projects with ease.
+- Explore new languages: Experiment with different languages without manual translation effort.
+- Boost productivity: Save time and resources by automating code translation.
+
+**Example Usage:**
+
+**Original Code (Python):**
+
+```Python
+def greet_user(name):
+  print(f"Hello, {name}!")
+```
+
+**Target Language: Java**
+
+**Translated Code:**
+
+```Java
+public class Main {
+
+  public static void main(String[] args) {
+    String name = "Alice";
+    System.out.println("Hello, " + name + "!");
+  }
+}
+```
