@@ -253,6 +253,11 @@ class Dev:
         # clear previous code
         pyautogui.hotkey("ctrl", "a")
         pyautogui.press('/')
+        pyautogui.leftClick()
+        pyautogui.hotkey("ctrl", "a")
+        pyautogui.press('down')
+        pyautogui.press("enter")
+
 
         # reformat code
         rcd = remove_first_and_last_lines(mcd)
