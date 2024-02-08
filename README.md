@@ -9,6 +9,21 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - [Benefits of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#benefits-of-dev)
 - [Getting Started](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#getting-started)
 - [Deep Dive in Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#deep-dive-in-dev)
+  * [Debugger](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#debugger)
+  * [Readme Generator](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#readme-generator)
+  * [Upload git](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#upload-git)
+  * [Rename Github repo](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#rename-github-repo)
+  * [Create Github repo](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#create-github-repo)
+  * [Generate](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#generate)
+  * [Review](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#review)
+  * [Generate Requirements.txt](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#generate-requirements-files)
+  * [Generate setup.py file](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#generate-setup-files)
+  * [Explain](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#explain)
+  * [Generate UI](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#generate-ui)
+  * [Modify](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#modify)
+  * [Translate code](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#trans)
+  * [Setup flask app](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#setup-flask-app)
+
 
 
 ## Unique Features of Dev:
