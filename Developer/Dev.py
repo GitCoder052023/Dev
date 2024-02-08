@@ -129,22 +129,6 @@ class Dev:
         pyautogui.press('enter')
         time.sleep(5)  # Adjust for push time
 
-    def create_github_repo(self, repo_name):
-        """Creates a GitHub repo using user terminal with PyAutoGUI."""
-
-        # Open GitHub website in browser
-        pyautogui.hotkey('ctrl', 'n')  # Open new browser window
-        time.sleep(1)
-        pyautogui.typewrite('https://github.com/new')
-        pyautogui.press('enter')
-        time.sleep(3)
-
-        # Enter repo name and create
-        pyautogui.click(x=350, y=250)  # Click on repo name field (adjust coordinates)
-        pyautogui.typewrite(repo_name)
-        pyautogui.press('tab')  # Move to create button
-        pyautogui.press('enter')
-
     def generate(self, prompt):
         cd = self.llm.invoke(prompt)
 
