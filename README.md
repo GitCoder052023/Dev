@@ -13,7 +13,6 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
   * [Readme Generator](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#readme-generator)
   * [Upload git](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#upload-git)
   * [Rename Github repo](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#rename-github-repo)
-  * [Create Github repo](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#create-github-repo)
   * [Generate](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#generate)
   * [Review](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#review)
   * [Generate Requirements.txt](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#generate-requirements-files)
@@ -242,43 +241,6 @@ from key import key
 dev = Dev.Dev(key)
 
 dev.rename_github_repo("my-old-repo", "my-new-repo)
-```
-
-## Create GitHub Repo:
-
-This function helps you quickly create a new GitHub repository through your web browser.
-
-**Usage:**
-
-1: Import the Dev Class:
-
-```Python
-from Dev.Developer import Dev
-```
-
-2: Create a Dev Instance:
-
-```Python
-dev = Dev(your-key)
-```
-
-3: Create a new repository:
-
-```Python
-dev.create_github_repo("my-shiny-new-project")
-```
-
-**Sample Code:**
-
-```Python
-from Dev.Developer import Dev
-from key import key
-
-dev = Dev.Dev(key)
-
-dev.create_github_repo("amazing-code-collection")
-
-print("Your new repository is ready on GitHub!")
 ```
 
 ## Generate:
