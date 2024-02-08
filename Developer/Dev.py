@@ -293,3 +293,43 @@ class Dev:
         with open(filename, "w") as file:
             # Optionally, write some content to the file
             file.write(rcd)
+
+    def setup_flask_app(self):
+        flask_app = """
+from flask import Flask
+app = Flask(__name__)
+        
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+        """
+
+        html = """
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+            
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+            
+</body>
+</html>
+        """
+
+        os.makedirs('static', exist_ok=True)  # Create 'static' directory if it doesn't exist
+        os.makedirs('templates', exist_ok=True)  # Create 'templates' directory if it doesn't exist
+
+        # Write basic Flask app code to a new Python file
+        with open('app.py', 'w') as f:
+            f.write(flask_app)
+
+        folder_path = "templates"
+        file_name = "index.html"
+        file_path = os.path.join(folder_path, file_name)
+
+        with open(file_path, "w") as f:
+            f.write(html)
+
