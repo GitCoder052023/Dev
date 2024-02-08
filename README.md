@@ -29,6 +29,8 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 
 - Seeking a comprehensive understanding of your code? Dev offers clear and insightful explanations, tailored to your preferred level of detail.
 
+- Setup Flask App: The ```setup_flask_app()``` function empowers you to effortlessly create a basic Flask application with minimal setup. This function streamlines the initial configuration process, saving you time and effort when starting new web development projects using Flask.
+
 ## Benefits of Dev:
 
 - Increased Productivity: Automate repetitive tasks like debugging and README generation, freeing up your time for more focused development.
@@ -520,3 +522,38 @@ public class Main {
   }
 }
 ```
+
+## Setup Flask App
+
+**Key Features:**
+
+- Generates essential Flask application code, including routing and a basic response.
+- Creates necessary directories ```static``` and ```templates``` for further customization.
+- Writes the Flask app code to a designated Python file ```app.py```
+- Creates a default HTML template file ```index.html``` with a simple structure.
+
+**Benefits:**
+
+- Quickstart Development: Get your Flask project up and running in no time, focusing on core functionalities instead of boilerplate code.
+- Organized Structure: Ensures proper directory and file organization for maintainable and scalable projects.
+- Customization Ready: Provides a solid foundation for further development and personalization of your Flask application.
+
+  **Usage:**
+
+  1: Import the Dev Class:
+  ```python
+  from Dev.Developer import Dev
+  ```
+
+  2: Create a Dev Instance:
+  ```python
+  dev = Dev.Dev(your_api_key)
+  ```
+
+  3: Set up your Flask app:
+  ```python
+  dev.setup_flask_app()
+  ```
+
+  **Output:**
+  The function will create the necessary files and directories in your current working directory, allowing you to start building your Flask application right away.
