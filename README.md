@@ -77,6 +77,15 @@ export GOOGLE_API_KEY=YOUR_API_KEY
 pip install git+https://github.com/GitCoder052023/Dev.git
 ```
 
+## Quick start
+```python
+from Dev.Developer import Dev
+
+assistant = Dev.Dev("YOUR GOOGLE GEMINI API KEY")
+
+assistant.generate("write a python code which can print 0 to 100")
+```
+
 Dev is your comprehensive coding companion. Whether you're a seasoned developer looking for a productivity boost or a beginner seeking guidance, Dev has something to offer. Embrace the power of AI and watch your coding workflow reach new heights of efficiency and effectiveness.
 
 # Ongoing Developments
