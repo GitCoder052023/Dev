@@ -11,6 +11,7 @@ setup(
         'pyperclip',
         'langchain_google_genai',
         'pyautogui',
-        'paperclip'
+        'paperclip',
+        'pymongo'
     ],  # List of dependencies
 )
