@@ -9,6 +9,20 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - [Benefits of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#benefits-of-dev)
 - [Getting Started](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#getting-started)
 - [Deep Dive in Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#deep-dive-in-dev)
+  * [Debugger](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#debugger)
+  * [Readme Generator](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#readme-generator)
+  * [Upload git](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#upload-git)
+  * [Rename Github repo](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#rename-github-repo)
+  * [Generate](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#generate)
+  * [Review](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#review)
+  * [Generate Requirements.txt](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#generate-requirements-files)
+  * [Generate setup.py file](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#generate-setup-files)
+  * [Explain](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#explain)
+  * [Generate UI](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#generate-ui)
+  * [Modify](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#modify)
+  * [Translate code](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#trans)
+  * [Setup flask app](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#setup-flask-app)
+
 
 
 ## Unique Features of Dev:
@@ -28,6 +42,8 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - Tired of manually crafting UI interfaces for your backend code? Dev takes care of the heavy lifting, effortlessly creating a matching user interface with integrated backend functionality.
 
 - Seeking a comprehensive understanding of your code? Dev offers clear and insightful explanations, tailored to your preferred level of detail.
+
+- Setup Flask App: The ```setup_flask_app()``` function empowers you to effortlessly create a basic Flask application with minimal setup. This function streamlines the initial configuration process, saving you time and effort when starting new web development projects using Flask.
 
 ## Benefits of Dev:
 
@@ -59,6 +75,15 @@ export GOOGLE_API_KEY=YOUR_API_KEY
 **Download package locally:**
 ```bash
 pip install git+https://github.com/GitCoder052023/Dev.git
+```
+
+## Quick start
+```python
+from Dev.Developer import Dev
+
+assistant = Dev.Dev("YOUR GOOGLE GEMINI API KEY")
+
+assistant.generate("write a python code which can print 0 to 100")
 ```
 
 Dev is your comprehensive coding companion. Whether you're a seasoned developer looking for a productivity boost or a beginner seeking guidance, Dev has something to offer. Embrace the power of AI and watch your coding workflow reach new heights of efficiency and effectiveness.
@@ -225,43 +250,6 @@ from key import key
 dev = Dev.Dev(key)
 
 dev.rename_github_repo("my-old-repo", "my-new-repo)
-```
-
-## Create GitHub Repo:
-
-This function helps you quickly create a new GitHub repository through your web browser.
-
-**Usage:**
-
-1: Import the Dev Class:
-
-```Python
-from Dev.Developer import Dev
-```
-
-2: Create a Dev Instance:
-
-```Python
-dev = Dev(your-key)
-```
-
-3: Create a new repository:
-
-```Python
-dev.create_github_repo("my-shiny-new-project")
-```
-
-**Sample Code:**
-
-```Python
-from Dev.Developer import Dev
-from key import key
-
-dev = Dev.Dev(key)
-
-dev.create_github_repo("amazing-code-collection")
-
-print("Your new repository is ready on GitHub!")
 ```
 
 ## Generate:
@@ -520,3 +508,38 @@ public class Main {
   }
 }
 ```
+
+## Setup Flask App
+
+**Key Features:**
+
+- Generates essential Flask application code, including routing and a basic response.
+- Creates necessary directories ```static``` and ```templates``` for further customization.
+- Writes the Flask app code to a designated Python file ```app.py```
+- Creates a default HTML template file ```index.html``` with a simple structure.
+
+**Benefits:**
+
+- Quickstart Development: Get your Flask project up and running in no time, focusing on core functionalities instead of boilerplate code.
+- Organized Structure: Ensures proper directory and file organization for maintainable and scalable projects.
+- Customization Ready: Provides a solid foundation for further development and personalization of your Flask application.
+
+  **Usage:**
+
+  1: Import the Dev Class:
+  ```python
+  from Dev.Developer import Dev
+  ```
+
+  2: Create a Dev Instance:
+  ```python
+  dev = Dev.Dev(your_api_key)
+  ```
+
+  3: Set up your Flask app:
+  ```python
+  dev.setup_flask_app()
+  ```
+
+  **Output:**
+  The function will create the necessary files and directories in your current working directory, allowing you to start building your Flask application right away.
