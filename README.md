@@ -8,7 +8,7 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - [Features of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#features-of-dev)
 - [Benefits of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#benefits-of-dev)
 - [Getting Started](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#getting-started)
-- [Deep Dive in Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#deep-dive-in-dev)
+- [Developer](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#deep-dive-in-dev)
   * [Debugger](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#debugger)
   * [Readme Generator](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#readme-generator)
   * [Upload git](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#upload-git)
@@ -22,6 +22,9 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
   * [Modify](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#modify)
   * [Translate code](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#trans)
   * [Setup flask app](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#setup-flask-app)
+- [Managers](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#managers)
+  * [DB Manager](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#db_manager)
+  * [Dev Auth](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#devauth)
 
 
 
