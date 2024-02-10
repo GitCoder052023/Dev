@@ -549,7 +549,7 @@ public class Main {
 
 # Managers
   
-# DB_manager
+# User_manager
 
 **Introduction:**
 
@@ -580,14 +580,14 @@ This feature simplifies interacting with MongoDB databases, providing convenient
 
 ## Usage:
 
-1: Import the DB_manager Class:
+1: Import the User_manager Class:
 ```python
-from Manager.Manager import DB_manager
+from Dev.Managers import User_manager
 ```
 
 2: Create an instance:
 ```python
-db_manager = DB_manager("mongodb://localhost:27017", "Your Database name", "Your collection name")
+db_manager = User_manager.DB_manager("mongodb://localhost:27017", "Your Database name", "Your collection name")
 ```
 
 3: Interact with your database:
@@ -613,11 +613,11 @@ documents = [{"name": "Alice"}, {"name": "Bob"}]
 db_manager.create_bulk(documents)
 ```
 
-# DevAuth
+# Auth_manager
 
 **Introduction:**
 
-DevAuth empowers you to easily implement user authentication and management functionalities in your Python applications. With its built-in security features, DevAuth streamlines user registration, login, and profile management.
+Auth_manager empowers you to easily implement user authentication and management functionalities in your Python applications. With its built-in security features, Auth_manager streamlines user registration, login, and profile management.
 
 **Key Features**
 - User Registration: Create new user accounts with usernames and passwords.
@@ -637,12 +637,12 @@ DevAuth empowers you to easily implement user authentication and management func
 
 1: Import the DevAuth Class:
  ```python
-from Managers import DevAuth
+from Dev.Managers import Auth_manager
 ```
 
 2: Create an instance:
 ```python
-auth_manager = DevAuth("mongodb://localhost:27017", "Your Database name", "Your collection name")
+auth_manager = Auth_manager.DevAuth("mongodb://localhost:27017", "Your Database name", "Your collection name")
 ```
 
 3: Manage user accounts:
