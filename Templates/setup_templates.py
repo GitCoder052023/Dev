@@ -11,5 +11,5 @@ def get_configs(filename):
 
 
 def fetch_configs():
-    return os.listdir(f"{new_loc}/Templates/configs/HTML/")
+    return os.listdir(f"{new_loc}/Dev/Templates/configs/HTML/")
 
