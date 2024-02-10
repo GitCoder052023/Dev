@@ -689,20 +689,20 @@ ds.get_configs("signup.html")
 ```
 
 ## Samples
-**blog template**
+### blog template
 ![Alt text](samples/blog.png)
 
-**E_commerce template**
+### E_commerce template
 ![Alt text](samples/E_commerce.png)
 
-**General Website Template**
+### General Website Template
 ![Alt text](samples/general.png)
 
-**login page template**
+### login page template
 ![Alt text](samples/login.png)
 
-**Portfolio website template**
+### Portfolio website template
 ![Alt text](samples/portfolio.png)
 
-**signup page template**
+### signup page template
 ![Alt text](samples/signup.png)
