@@ -23,8 +23,8 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
   * [Translate code](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#trans)
   * [Setup flask app](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#setup-flask-app)
 - [Managers](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#managers)
-  * [DB Manager](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#db_manager)
-  * [Dev Auth](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#devauth)
+  * [User_manager](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#user_manager)
+  * [Auth_managers](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#auth_manager)
 
 
 
