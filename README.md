@@ -23,8 +23,8 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
   * [Translate code](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#trans)
   * [Setup flask app](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#setup-flask-app)
 - [Managers](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#managers)
-  * [DB Manager](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#db_manager)
-  * [Dev Auth](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#devauth)
+  * [User_manager](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#user_manager)
+  * [Auth_manager](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#auth_manager)
 
 
 
@@ -549,7 +549,7 @@ public class Main {
 
 # Managers
   
-# DB_manager
+# User_manager
 
 **Introduction:**
 
@@ -580,14 +580,14 @@ This feature simplifies interacting with MongoDB databases, providing convenient
 
 ## Usage:
 
-1: Import the DB_manager Class:
+1: Import the User_manager Class:
 ```python
-from Manager.Manager import DB_manager
+from Dev.Managers import User_manager
 ```
 
 2: Create an instance:
 ```python
-db_manager = DB_manager("mongodb://localhost:27017", "Your Database name", "Your collection name")
+db_manager = User_manager.DB_manager("mongodb://localhost:27017", "Your Database name", "Your collection name")
 ```
 
 3: Interact with your database:
@@ -613,11 +613,11 @@ documents = [{"name": "Alice"}, {"name": "Bob"}]
 db_manager.create_bulk(documents)
 ```
 
-# DevAuth
+# Auth_manager
 
 **Introduction:**
 
-DevAuth empowers you to easily implement user authentication and management functionalities in your Python applications. With its built-in security features, DevAuth streamlines user registration, login, and profile management.
+Auth_manager empowers you to easily implement user authentication and management functionalities in your Python applications. With its built-in security features, Auth_manager streamlines user registration, login, and profile management.
 
 **Key Features**
 - User Registration: Create new user accounts with usernames and passwords.
@@ -637,12 +637,12 @@ DevAuth empowers you to easily implement user authentication and management func
 
 1: Import the DevAuth Class:
  ```python
-from Managers import DevAuth
+from Dev.Managers import Auth_manager
 ```
 
 2: Create an instance:
 ```python
-auth_manager = DevAuth("mongodb://localhost:27017", "Your Database name", "Your collection name")
+auth_manager = Auth_manager.DevAuth("mongodb://localhost:27017", "Your Database name", "Your collection name")
 ```
 
 3: Manage user accounts:
@@ -652,5 +652,41 @@ auth_manager.register_user("john_doe", "password123")
 
 # Explore more!
 ```
+---
 
+# Templates
+## Introduction
 
+**Dev's Templates** provides a streamlined starting point for Python developers to create their websites using pre-built templates. Whether you're a beginner unsure of where to begin or an experienced developer seeking a quick setup, Dev's Templates offers a beautiful dashboard and various templates to kickstart your web development journey.
+
+Key features include:
+
+- **Built-in Templates**: Dev's Templates includes ready-to-use templates for landing pages, navigation bars, and more.
+- **Dashboard Options**: Choose from different dashboards tailored for various website types:
+    - General websites
+    - E-commerce websites
+    - Blog websites
+    - Portfolio websites
+- **Login and Signup Pages**: Dev also offers built-in login and signup pages for seamless user authentication.
+
+Get started with Dev's Templates and accelerate your web development process! 🚀
+
+## Quick start
+
+```python
+import Dev.Templates.setup_templates as ds
+
+temps = ds.fetch_configs()  # for fetching list of html files from config
+print(temps)
+
+# You can use these templates in your flask app
+ds.get_configs("blog.html")
+ds.get_configs("E_commerce.html")
+ds.get_configs("general.html")
+ds.get_configs("login.html")
+ds.get_configs("portfolio.html")
+ds.get_configs("signup.html")
+```
+
+## Samples
+**blog.html**
