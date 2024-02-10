@@ -692,21 +692,37 @@ ds.get_configs("portfolio.html")
 ds.get_configs("signup.html")
 ```
 
+## how to Inject templates in templates folder?
+```python
+import Dev.Templates.setup_templates as ds
+import os
+
+os.makedirs('templates', exist_ok=True)
+
+html = ds.get_configs("general.html")
+folder_path = "templates"
+file_name = "index.html"
+file_path = os.path.join(folder_path, file_name)
+
+with open(file_path, "w") as f:
+    f.write(html)
+```
+
 ## Samples
-### blog template
+## blog template
 ![Alt text](samples/blog.png)
 
-### E_commerce template
+## E_commerce template
 ![Alt text](samples/E_commerce.png)
 
-### General Website Template
+## General Website Template
 ![Alt text](samples/general.png)
 
-### login page template
+## login page template
 ![Alt text](samples/login.png)
 
-### Portfolio website template
+## Portfolio website template
 ![Alt text](samples/portfolio.png)
 
-### signup page template
+## signup page template
 ![Alt text](samples/signup.png)
