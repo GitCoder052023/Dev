@@ -8,7 +8,7 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - [Features of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#features-of-dev)
 - [Benefits of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#benefits-of-dev)
 - [Getting Started](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#getting-started)
-- [Deep Dive in Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#deep-dive-in-dev)
+- [Developer](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#deep-dive-in-dev)
   * [Debugger](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#debugger)
   * [Readme Generator](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#readme-generator)
   * [Upload git](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#upload-git)
@@ -22,6 +22,9 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
   * [Modify](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#modify)
   * [Translate code](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#trans)
   * [Setup flask app](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#setup-flask-app)
+- [Managers](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#managers)
+  * [DB Manager](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#db_manager)
+  * [Dev Auth](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#devauth)
 
 
 
@@ -91,7 +94,7 @@ Dev is your comprehensive coding companion. Whether you're a seasoned developer 
 # Ongoing Developments
 - **API Generator:** **(UNDER PLANNING)**
 
-# Deep Dive in Dev:
+# Developer
 
 ## Debugger
 Debugger provides a powerful tool for developers to streamline their debugging process. It is designed to automate the process of debugging code, making it more efficient and less time-consuming.
@@ -543,3 +546,111 @@ public class Main {
 
   **Output:**
   The function will create the necessary files and directories in your current working directory, allowing you to start building your Flask application right away.
+
+# Managers
+  
+# DB_manager
+
+**Introduction:**
+
+This feature simplifies interacting with MongoDB databases, providing convenient methods for creating, reading, updating, and deleting data. With DB_manager, you can manage your MongoDB operations efficiently and effortlessly.
+
+**Key Features**
+- Connect to Databases: Establish connections using connection strings.
+- CRUD Operations:
+  * Create: Insert single or multiple documents.
+  * Read: Find documents based on queries or retrieve all documents.
+  * Update: Modify documents matching specific criteria.
+  * Delete: Remove documents matching a query.
+- Bulk Operations: Perform efficient insertions, updates, and deletions on multiple documents.
+- Database and Collection Management: Create, access, and delete databases and collections.
+
+**Key Components:**
+- connect() Method: Establishes a connection to the specified database.
+- create() Method: Inserts a single document into the collection.
+- read() Method: Retrieves documents based on a query or all documents.
+- update() Method: Updates documents matching a specific query.
+- delete() Method: Removes documents matching a specific query.
+- create_bulk() Method: Inserts multiple documents efficiently.
+- update_bulk() Method: Updates multiple documents matching a query.
+- delete_bulk() Method: Deletes multiple documents matching a query.
+- create_database() Method: Creates a new database and collection.
+- create_collection() Method: Creates a new collection within an existing database.
+- delete_collection() Method: Removes a collection from the database.
+
+## Usage:
+
+1: Import the DB_manager Class:
+```python
+from Manager.Manager import DB_manager
+```
+
+2: Create an instance:
+```python
+db_manager = DB_manager("mongodb://localhost:27017", "Your Database name", "Your collection name")
+```
+
+3: Interact with your database:
+```python
+# Insert a document
+data = {"name": "John Doe", "age": 30}
+db_manager.create(data)
+
+# Find all documents with age greater than 25
+results = db_manager.read({"age": 30})
+
+# Update documents with age 30 and set their city to "New York"
+db_manager.update({"age": 30}, {"city": "New York"}}) # Dev can handle dollar complication, you just need to give new data
+
+# Delete all documents with age 30
+db_manager.delete({"age": 30})
+
+# Create a new database and collection
+db_manager.create_database("my_new_database", "my_new_collection")
+
+# Insert multiple documents at once
+documents = [{"name": "Alice"}, {"name": "Bob"}]
+db_manager.create_bulk(documents)
+```
+
+# DevAuth
+
+**Introduction:**
+
+DevAuth empowers you to easily implement user authentication and management functionalities in your Python applications. With its built-in security features, DevAuth streamlines user registration, login, and profile management.
+
+**Key Features**
+- User Registration: Create new user accounts with usernames and passwords.
+- User Deletion: Remove user accounts from the system.
+- Password Updates: Allow users to change their passwords securely.
+- Authentication: Verify user credentials for secure access control.
+- User Details Retrieval: Access specific user information for various purposes.
+
+**Key Components:**
+- register_user() Method: Add a new user to the system.
+- delete_user() Method: Remove a user from the database.
+- update_user() Method: Enable users to update their passwords.
+- authenticate_user() Method: Verify user credentials for login attempts.
+- fetch_user_details() Method: Retrieve specific information about a user.
+
+## Usage:
+
+1: Import the DevAuth Class:
+ ```python
+from Managers import DevAuth
+```
+
+2: Create an instance:
+```python
+auth_manager = DevAuth("mongodb://localhost:27017", "Your Database name", "Your collection name")
+```
+
+3: Manage user accounts:
+```python
+# Register a new user
+auth_manager.register_user("john_doe", "password123")
+
+# Explore more!
+```
+
+
