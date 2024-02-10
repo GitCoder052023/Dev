@@ -652,5 +652,41 @@ auth_manager.register_user("john_doe", "password123")
 
 # Explore more!
 ```
+---
 
+# Templates
+## Introduction
 
+**Dev's Templates** provides a streamlined starting point for Python developers to create their websites using pre-built templates. Whether you're a beginner unsure of where to begin or an experienced developer seeking a quick setup, Dev's Templates offers a beautiful dashboard and various templates to kickstart your web development journey.
+
+Key features include:
+
+- **Built-in Templates**: Dev's Templates includes ready-to-use templates for landing pages, navigation bars, and more.
+- **Dashboard Options**: Choose from different dashboards tailored for various website types:
+    - General websites
+    - E-commerce websites
+    - Blog websites
+    - Portfolio websites
+- **Login and Signup Pages**: Dev also offers built-in login and signup pages for seamless user authentication.
+
+Get started with Dev's Templates and accelerate your web development process! 🚀
+
+## Quick start
+
+```python
+import Dev.Templates.setup_templates as ds
+
+temps = ds.fetch_configs()  # for fetching list of html files from config
+print(temps)
+
+# You can use these templates in your flask app
+ds.get_configs("blog.html")
+ds.get_configs("E_commerce.html")
+ds.get_configs("general.html")
+ds.get_configs("login.html")
+ds.get_configs("portfolio.html")
+ds.get_configs("signup.html")
+```
+
+## Samples
+**blog.html**
