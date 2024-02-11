@@ -59,6 +59,10 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - Enhanced Creativity: Explore new possibilities with code generation, sparking innovation and overcoming coding hurdles.
 - Streamlined Workflow: Integrate seamlessly with Git for effortless project management, allowing you to focus on what matters most - writing great code.
 
+## Basic requirements:
+- Windows 10 (Supports only windows)
+- Python 3.10 or 3.10+
+
 ## Getting Started:
 **Clone repo:**
 1: clone repo
