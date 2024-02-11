@@ -7,6 +7,7 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - [Dev: Your AI-Powered Coding Assistant](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#dev-your-ai-powered-coding-assistant)
 - [Features of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#features-of-dev)
 - [Benefits of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#benefits-of-dev)
+- [Basic Requirements](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#basic-requirements)
 - [Getting Started](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#getting-started)
 - [Developer](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#deep-dive-in-dev)
   * [Debugger](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#debugger)
@@ -25,6 +26,10 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - [Managers](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#managers)
   * [User_manager](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#user_manager)
   * [Auth_manager](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#auth_manager)
+- [Templates](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#templates)
+  * [Introduction](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#introduction)
+  * [Quick Start](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#quick-start-1)
+  * [Samples](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#samples)
 
 
 
@@ -54,6 +59,10 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - Improved Code Quality: Gain valuable insights from AI-powered debugging and code review, resulting in cleaner, more efficient code.
 - Enhanced Creativity: Explore new possibilities with code generation, sparking innovation and overcoming coding hurdles.
 - Streamlined Workflow: Integrate seamlessly with Git for effortless project management, allowing you to focus on what matters most - writing great code.
+
+## Basic requirements:
+- Windows 10 (Supports only windows)
+- Python 3.10
 
 ## Getting Started:
 **Clone repo:**
@@ -688,21 +697,48 @@ ds.get_configs("portfolio.html")
 ds.get_configs("signup.html")
 ```
 
+## how to use Dev templates in flask?
+```python
+from flask import Flask, render_template
+import Dev.Templates.setup_templates as ds
+import os
+
+app = Flask(__name__)
+
+os.makedirs('templates', exist_ok=True)
+
+html = ds.get_configs("general.html")
+folder_path = "templates"
+file_name = "index.html"
+file_path = os.path.join(folder_path, file_name)
+
+with open(file_path, "w") as f:
+    f.write(html)
+        
+@app.route('/')
+def hello_world():
+    return render_template("index.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
+```
+
 ## Samples
-**blog template**
+## blog template
 ![Alt text](samples/blog.png)
 
-**E_commerce template**
+## E_commerce template
 ![Alt text](samples/E_commerce.png)
 
-**General Website Template**
+## General Website Template
 ![Alt text](samples/general.png)
 
-**login page template**
+## login page template
 ![Alt text](samples/login.png)
 
-**Portfolio website template**
+## Portfolio website template
 ![Alt text](samples/portfolio.png)
 
-**signup page template**
+## signup page template
 ![Alt text](samples/signup.png)
