@@ -7,6 +7,7 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - [Dev: Your AI-Powered Coding Assistant](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#dev-your-ai-powered-coding-assistant)
 - [Features of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#features-of-dev)
 - [Benefits of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#benefits-of-dev)
+- [Basic Requirements](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#basic-requirements)
 - [Getting Started](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#getting-started)
 - [Developer](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#deep-dive-in-dev)
   * [Debugger](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#debugger)
@@ -61,7 +62,7 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 
 ## Basic requirements:
 - Windows 10 (Supports only windows)
-- Python 3.10 or 3.10+
+- Python 3.10
 
 ## Getting Started:
 **Clone repo:**
