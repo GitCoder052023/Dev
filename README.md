@@ -697,10 +697,13 @@ ds.get_configs("portfolio.html")
 ds.get_configs("signup.html")
 ```
 
-## how to Inject templates in templates folder?
+## how to use Dev templates in flask?
 ```python
+from flask import Flask, render_template
 import Dev.Templates.setup_templates as ds
 import os
+
+app = Flask(__name__)
 
 os.makedirs('templates', exist_ok=True)
 
@@ -711,6 +714,14 @@ file_path = os.path.join(folder_path, file_name)
 
 with open(file_path, "w") as f:
     f.write(html)
+        
+@app.route('/')
+def hello_world():
+    return render_template("index.html")
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
 ```
 
 ## Samples
