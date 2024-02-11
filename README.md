@@ -28,6 +28,7 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
   * [Auth_manager](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#auth_manager)
 - [Templates](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#templates)
   * [Introduction](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#introduction)
+  * [Components](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#components)
   * [Quick Start](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#quick-start-1)
   * [Samples](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#samples)
 
