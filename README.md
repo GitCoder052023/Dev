@@ -59,7 +59,7 @@ We're committed to continuous improvement, and this is just the beginning. Expec
 
 Welcome to the inaugural release of **Dev**! We're excited to introduce the following key features:
 
-1. **`update_Dev` Functionality**: Our flagship inbuilt feature, `update_Dev`, ensures that you always have access to the latest enhancements and bug fixes.
+1. **`update_Dev` Functionality**: Our flagship inbuilt feature, `update_Dev`, ensures that you always have access to the latest enhancements and bug fixes.(**CURRENTLY NOT WORKING PROPERLY DO NOT USE RIGHT NOW, I AM TRYING TO SOLVE THIS ISSUE!**)
 
 ## Unique Features of Dev:
 
