@@ -322,7 +322,7 @@ def hello_world():
     def update_Dev(self):
         loc = os.getcwd()
 
-        dir_path = f"{loc}\\Dev"
+        dir_path = f"{loc}\Dev"
         try:
             shutil.rmtree(dir_path)
 
