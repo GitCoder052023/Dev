@@ -6,6 +6,7 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 
 - [Dev: Your AI-Powered Coding Assistant](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#dev-your-ai-powered-coding-assistant)
 - [Announcements](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#announcements)
+- [Latest Version](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#latest-version-v10)
 - [Features of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#unique-features-of-dev)
 - [Benefits of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#benefits-of-dev)
 - [Basic Requirements](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#basic-requirements)
