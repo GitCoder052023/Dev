@@ -323,7 +323,7 @@ def hello_world():
         loc = os.getcwd()
         new_loc = loc.replace("\\", "/")
 
-        dir_path = f"{new_loc}/Dev"
+        dir_path = f"{new_loc}"
         try:
             shutil.rmtree(dir_path)
 
