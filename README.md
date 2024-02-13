@@ -5,11 +5,13 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 # Table of Contents
 
 - [Dev: Your AI-Powered Coding Assistant](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#dev-your-ai-powered-coding-assistant)
-- [Features of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#features-of-dev)
+- [Announcements](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#announcements)
+- [Latest Version](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#latest-version-v10)
+- [Features of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#unique-features-of-dev)
 - [Benefits of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#benefits-of-dev)
 - [Basic Requirements](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#basic-requirements)
 - [Getting Started](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#getting-started)
-- [Developer](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#deep-dive-in-dev)
+- [Developer](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#developer)
   * [Debugger](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#debugger)
   * [Readme Generator](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#readme-generator)
   * [Upload git](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#upload-git)
@@ -32,7 +34,32 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
   * [Quick Start](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#quick-start-1)
   * [Samples](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#samples)
 
+---
 
+# Announcements
+## Dev Update: Introducing `update_Dev` Functionality
+
+📅 **Effective Date:** February 13, 2024
+
+## Overview
+
+Greetings, fellow developers! As of today, we are thrilled to announce a series of updates for **Dev**, our cutting-edge software platform. These enhancements will empower you with new features, improved functionality, and a smoother user experience.
+
+## Key Highlights
+
+1. **`update_Dev` Functionality**: Our flagship inbuilt feature, `update_Dev`, takes center stage in this release. With it, you can seamlessly update your Dev environment, ensuring that you always have access to the latest enhancements and bug fixes.
+
+## Stay Tuned!
+
+We're committed to continuous improvement, and this is just the beginning. Expect more exciting features and enhancements in the coming weeks. Thank you for being part of the Dev community!
+
+---
+
+# Latest Version: v1.0
+
+Welcome to the inaugural release of **Dev**! We're excited to introduce the following key features:
+
+1. **`update_Dev` Functionality**: Our flagship inbuilt feature, `update_Dev`, ensures that you always have access to the latest enhancements and bug fixes.
 
 ## Unique Features of Dev:
 
@@ -64,6 +91,7 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 ## Basic requirements:
 - Windows 10 (Supports only windows)
 - Python 3.10
+
 
 ## Getting Started:
 **Clone repo:**
