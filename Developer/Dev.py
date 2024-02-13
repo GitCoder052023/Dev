@@ -4,6 +4,7 @@ from langchain_google_genai import GoogleGenerativeAI
 import pyautogui
 import paperclip
 import os
+import shutil
 import subprocess
 
 
@@ -318,25 +319,16 @@ def hello_world():
         with open(file_path, "w") as f:
             f.write(html)
 
-    def update_Dev(self, remote_branch="origin/main", strategy="merge"):
+    def update_Dev(self):
+        dir_path = os.path.join(os.getcwd(), "Dev")
         try:
-            # Fetch updates from the remote branch
-            subprocess.run("git fetch", check=True, shell=True)
+            shutil.rmtree(dir_path)
 
-            # Choose the merging strategy
-            if strategy == "merge":
-                subprocess.run(f"git merge{remote_branch}", check=True, shell=True)
-            elif strategy == "rebase":
-                subprocess.run(f"git rebase {remote_branch}", check=True, shell=True)
-            else:
-                raise ValueError("Invalid merging strategy: {}".format(strategy))
-
-            print("Dev '{}' updated successfully!".format("Dev"))
-            return True
-
-        except subprocess.CalledProcessError as e:
-            print("Error updating Dev '{}': {}".format("Dev", e.output))
-            return False
+            subprocess.run("git clone https://github.com/GitCoder052023/Dev.git", shell=True)
+        except FileNotFoundError:
+            print(f"Error: Dev does not exist")
+        except OSError:
+            print(f"Error: Couldn't remove Dev due to permission issues or other reasons")
 
 
 
