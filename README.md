@@ -5,7 +5,8 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 # Table of Contents
 
 - [Dev: Your AI-Powered Coding Assistant](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#dev-your-ai-powered-coding-assistant)
-- [Features of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#features-of-dev)
+- [Announcements](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#announcements)
+- [Features of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#unique-features-of-dev)
 - [Benefits of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#benefits-of-dev)
 - [Basic Requirements](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#basic-requirements)
 - [Getting Started](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#getting-started)
@@ -32,13 +33,10 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
   * [Quick Start](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#quick-start-1)
   * [Samples](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#samples)
 
-
-Certainly! Let's create a more polished and informative version of your text for the GitHub README file:
-
 ---
 
 # Announcements
-# Dev Update: Introducing `update_Dev` Functionality
+## Dev Update: Introducing `update_Dev` Functionality
 
 📅 **Effective Date:** February 13, 2024
 
