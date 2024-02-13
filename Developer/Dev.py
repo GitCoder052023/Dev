@@ -324,11 +324,18 @@ def hello_world():
         try:
             shutil.rmtree(dir_path)
 
-            subprocess.run("git clone https://github.com/GitCoder052023/Dev.git", shell=True)
-        except FileNotFoundError:
-            print(f"Error: Dev does not exist")
-        except OSError:
-            print(f"Error: Couldn't remove Dev due to permission issues or other reasons")
+            command = ["git", "clone", "https://github.com/GitCoder052023/Dev.git"]
+
+            # Execute the command, capturing output and handling errors
+            result = subprocess.run(command, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+            # Print the successful output (optional)
+            print(result.stdout.decode())
+
+        except subprocess.CalledProcessError as e:
+            # Handle errors gracefully, e.g., log or display appropriate message
+            print(f"Error: {e.returncode}, {e.output.decode()}")
+
 
 
 
