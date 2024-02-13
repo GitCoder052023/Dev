@@ -321,16 +321,16 @@ def hello_world():
     def update_Dev(self, remote_branch="origin/main", strategy="merge"):
         try:
             # Navigate to the repository directory
-            subprocess.run(["cd", "Dev"], check=True)
+            subprocess.run("cd Dev", check=True, shell=True)
 
             # Fetch updates from the remote branch
-            subprocess.run(["git", "fetch"], check=True)
+            subprocess.run("git fetch", check=True, shell=True)
 
             # Choose the merging strategy
             if strategy == "merge":
-                subprocess.run(["git", "merge", remote_branch], check=True)
+                subprocess.run(f"git merge{remote_branch}", check=True, shell=True)
             elif strategy == "rebase":
-                subprocess.run(["git", "rebase", remote_branch], check=True)
+                subprocess.run(f"git rebase {remote_branch}", check=True, shell=True)
             else:
                 raise ValueError("Invalid merging strategy: {}".format(strategy))
 
