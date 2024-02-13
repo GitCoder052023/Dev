@@ -320,7 +320,10 @@ def hello_world():
             f.write(html)
 
     def update_Dev(self):
-        dir_path = os.path.join(os.getcwd(), "Dev")
+        loc = os.getcwd()
+        new_loc = loc.replace("\\", "/")
+
+        dir_path = f"{new_loc}/Dev"
         try:
             shutil.rmtree(dir_path)
 
