@@ -3,3 +3,4 @@ langchain-google-genai
 pyautogui
 paperclip
 pymongo
+subprocess

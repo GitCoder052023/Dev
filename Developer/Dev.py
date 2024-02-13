@@ -4,6 +4,7 @@ from langchain_google_genai import GoogleGenerativeAI
 import pyautogui
 import paperclip
 import os
+import subprocess
 
 
 def remove_first_and_last_lines(paragraph):
@@ -316,4 +317,30 @@ def hello_world():
 
         with open(file_path, "w") as f:
             f.write(html)
+
+    def update_Dev(self, remote_branch="origin/main", strategy="merge"):
+        try:
+            # Navigate to the repository directory
+            subprocess.run(["cd", "Dev"], check=True)
+
+            # Fetch updates from the remote branch
+            subprocess.run(["git", "fetch"], check=True)
+
+            # Choose the merging strategy
+            if strategy == "merge":
+                subprocess.run(["git", "merge", remote_branch], check=True)
+            elif strategy == "rebase":
+                subprocess.run(["git", "rebase", remote_branch], check=True)
+            else:
+                raise ValueError("Invalid merging strategy: {}".format(strategy))
+
+            print("Dev '{}' updated successfully!".format("Dev"))
+            return True
+
+        except subprocess.CalledProcessError as e:
+            print("Error updating Dev '{}': {}".format("Dev", e.output))
+            return False
+
+
+
 
