@@ -28,6 +28,7 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
   * [Auth_manager](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#auth_manager)
 - [Templates](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#templates)
   * [Introduction](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#introduction)
+  * [Components](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#components)
   * [Quick Start](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#quick-start-1)
   * [Samples](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#samples)
 
@@ -680,48 +681,22 @@ Key features include:
 
 Get started with Dev's Templates and accelerate your web development process! 🚀
 
+## Components
+- ```fetch_configs()```: Fetch all the available html templates
+- ```get_configs()``` : Import html template from available templates
+- ```setup_configs()``` : Setup a basic website using flask and general Template of Dev
+
+
+
 ## Quick start
+### Main.py
+
+Create a python file ```main.py``` and run given code, make sure that there is no ```app.py``` file in same directory where you are running your ```main.py```. Dev automatically setup everything like project structure and ```app.py```. After running ```main.py``` just delete it, and run your ```app.py```. **And congratulations your website is generated in just 2 lines of code!** 🎉
 
 ```python
-import Dev.Templates.setup_templates as ds
+import Dev.Templates.setup_templates as sd
 
-temps = ds.fetch_configs()  # for fetching list of html files from config
-print(temps)
-
-# You can use these templates in your flask app
-ds.get_configs("blog.html")
-ds.get_configs("E_commerce.html")
-ds.get_configs("general.html")
-ds.get_configs("login.html")
-ds.get_configs("portfolio.html")
-ds.get_configs("signup.html")
-```
-
-## how to use Dev templates in flask?
-```python
-from flask import Flask, render_template
-import Dev.Templates.setup_templates as ds
-import os
-
-app = Flask(__name__)
-
-os.makedirs('templates', exist_ok=True)
-
-html = ds.get_configs("general.html")
-folder_path = "templates"
-file_name = "index.html"
-file_path = os.path.join(folder_path, file_name)
-
-with open(file_path, "w") as f:
-    f.write(html)
-        
-@app.route('/')
-def hello_world():
-    return render_template("index.html")
-
-if __name__ == "__main__":
-    app.run(debug=True)
-
+sd.setup_configs()
 ```
 
 ## Samples
