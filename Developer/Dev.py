@@ -320,9 +320,6 @@ def hello_world():
 
     def update_Dev(self, remote_branch="origin/main", strategy="merge"):
         try:
-            # Navigate to the repository directory
-            subprocess.run("cd Dev", check=True, shell=True)
-
             # Fetch updates from the remote branch
             subprocess.run("git fetch", check=True, shell=True)
 
