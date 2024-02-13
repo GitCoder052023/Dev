@@ -10,7 +10,7 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - [Benefits of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#benefits-of-dev)
 - [Basic Requirements](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#basic-requirements)
 - [Getting Started](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#getting-started)
-- [Developer](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#deep-dive-in-dev)
+- [Developer](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#developer)
   * [Debugger](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#debugger)
   * [Readme Generator](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#readme-generator)
   * [Upload git](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#upload-git)
