@@ -54,6 +54,12 @@ We're committed to continuous improvement, and this is just the beginning. Expec
 
 ---
 
+# Latest Version: v1.0
+
+Welcome to the inaugural release of **Dev**! We're excited to introduce the following key features:
+
+1. **`update_Dev` Functionality**: Our flagship inbuilt feature, `update_Dev`, ensures that you always have access to the latest enhancements and bug fixes.
+
 ## Unique Features of Dev:
 
 - AI-powered Debugging: Stuck on a coding bug? Dev can analyze your code with the help of a large language model, identify the error, and suggest corrections. Simply provide the error message or a specific prompt for tailored debugging assistance.
