@@ -319,24 +319,8 @@ def hello_world():
         with open(file_path, "w") as f:
             f.write(html)
 
-    def update_Dev(self):
-        loc = os.getcwd()
-
-        dir_path = f"{loc}\Dev"
-        try:
-            shutil.rmtree(dir_path)
-
-            command = ["git", "clone", "https://github.com/GitCoder052023/Dev.git"]
-
-            # Execute the command, capturing output and handling errors
-            result = subprocess.run(command, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
-            # Print the successful output (optional)
-            print(result.stdout.decode())
-
-        except subprocess.CalledProcessError as e:
-            # Handle errors gracefully, e.g., log or display appropriate message
-            print(f"Error: {e.returncode}, {e.output.decode()}")
+    def Fetch_Version(self):
+        return "v1.0"
 
 
 
