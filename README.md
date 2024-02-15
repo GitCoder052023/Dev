@@ -6,7 +6,9 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 
 - [Dev: Your AI-Powered Coding Assistant](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#dev-your-ai-powered-coding-assistant)
 - [Announcements](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#announcements)
-- [Latest Version](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#latest-version-v10)
+- [Latest Version](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#latest-version-v110)
+  * [Description](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#description)
+  * [Quick start](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#quick-start)
 - [Features of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#unique-features-of-dev)
 - [Benefits of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#benefits-of-dev)
 - [Basic Requirements](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#basic-requirements)
@@ -48,37 +50,37 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 
 Starting from **February 13, 2024**, I am thrilled to announce a series of updates for **Dev**. These updates will enhance the platform by introducing major functionalities. Today marks the release of the **socket functionality**, an inbuilt feature that allows seamless socket connections using just one line of code in **Dev**.
 
+## Major release
+
+Socket Functionality: The star of this release, the socket functionality, is an inbuilt feature that simplifies socket connections using just one line of code in Dev. Whether you’re building real-time applications, chat systems, or multiplayer games, this feature streamlines communication between clients and servers.
+
 ## Socket Functionality Highlights:
 
 - **Effortless Connectivity**: Establish socket connections effortlessly.
 - **Streamlined Communication**: Communicate efficiently between clients and servers.
 - **Minimal Code**: Achieve powerful socket functionality with concise code.
 
-# New Features
-## Major release
+## Minor Improvements
 
-Socket Functionality: The star of this release, the socket functionality, is an inbuilt feature that simplifies socket connections using just one line of code in Dev. Whether you’re building real-time applications, chat systems, or multiplayer games, this feature streamlines communication between clients and servers.
-  
-## Socket Functionality Highlights
-  
-- Effortless Connectivity: Establish socket connections effortlessly. Say goodbye to complex setup procedures; now, it’s as simple as a single line of code.
-  
-- Streamlined Communication: Communicate efficiently between clients and servers. Whether you’re sending messages, data streams, or notifications, the socket functionality ensures smooth communication.
-  
-- Minimal Code: Achieve powerful socket functionality with concise code. We’ve abstracted away the complexities, allowing you to focus on your application logic.
+- `fetch_Version()`: Fetch your current version of Dev
+---
 
-### Quick Start
+# Latest Version v1.1.0
+
+## Description
+
+In this latest Version v1.1.0 you got one new features which is setup group connection, setup group connection builds a server and client setup for you which allows to use build your chat applications without focusing on server setup. Basically, this feature allows multiple clients to interact between them like whatsapp, using this setup clients can send messages and recieves messages from other clients. 
+
+**Note**: But note that this feauture only builds server and client setup and very basic user interaction so you need to customise it according to your needs!
+
+
+## Quick Start
 
 ```python
 from Dev.Templates.Socket import setup_connection
 
 setup_connection.setup_socket_files()
 ```
-
-## Minor Improvements
-
-- `fetch_Version()`: Fetch your current version of Dev
----
 
 ## Unique Features of Dev:
 
