@@ -1,4 +1,4 @@
-def setup_multi_connection():
+def setup_group_connection():
     # Create server.py file
     with open("server.py", "w") as server_file:
         server_code = """
@@ -51,8 +51,8 @@ def main():
 
 if __name__ == "__main__":
     main()
-"""
-    server_file.write(server_code)
+            """
+        server_file.write(server_code)
 
     with open("client.py", "w") as client_file:
         client_code = """
@@ -90,6 +90,6 @@ if __name__ == "__main__":
         
         """
 
-    client_file.write(client_code)
+        client_file.write(client_code)
 
     print("Socket files created: server.py and client.py")
