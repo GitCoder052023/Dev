@@ -320,7 +320,7 @@ def hello_world():
             f.write(html)
 
     def Fetch_Version(self):
-        return "v1.0"
+        return "v1.1.0"
 
 
 
