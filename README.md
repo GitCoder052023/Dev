@@ -794,10 +794,20 @@ Socket Functionality: The star of this release, the socket functionality, is an 
   
 - Minimal Code: Achieve powerful socket functionality with concise code. We’ve abstracted away the complexities, allowing you to focus on your application logic.
 
-### Quick Start
+## Quick Start
+
+### Setup Connection
 
 ```python
 from Dev.Templates.Socket import setup_connection
 
 setup_connection.setup_socket_files()
+```
+
+### Setup Group Connection
+
+```python
+from Dev.Templates.Socket import setup_group_connection
+
+setup_group_connection.setup_group_connection()
 ```
