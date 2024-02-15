@@ -70,9 +70,9 @@ Socket Functionality: The star of this release, the socket functionality, is an 
 ### Quick Start
 
 ```python
-from Dev.Templates.Socket import Socket
+from Dev.Templates.Socket import setup_connection
 
-Socket.setup_socket_files()
+setup_connection.setup_socket_files()
 ```
 
 ## Minor Improvements
@@ -783,7 +783,7 @@ Socket Functionality: The star of this release, the socket functionality, is an 
 ### Quick Start
 
 ```python
-from Dev.Templates.Socket import Socket
+from Dev.Templates.Socket import setup_connection
 
-Socket.setup_socket_files()
+setup_connection.setup_socket_files()
 ```
