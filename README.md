@@ -29,37 +29,56 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
   * [User_manager](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#user_manager)
   * [Auth_manager](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#auth_manager)
 - [Templates](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#templates)
-  * [Introduction](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#introduction)
-  * [Components](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#components)
-  * [Quick Start](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#quick-start-1)
-  * [Samples](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#samples)
+  - [Web](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#web)
+     * [Introduction](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#introduction)
+     * [Components](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#components)
+     * [Quick Start](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#quick-start-1)
+     * [Samples](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#samples)
+  - [Socket](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#socket)
+     * [Highlights](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#socket-functionality-highlights-2)
+     * [Quick Start](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#quick-start-3)
 
 ---
 
 # Announcements
-## Dev Update: Introducing `update_Dev` Functionality
 
-📅 **Effective Date:** February 13, 2024
+# Dev Updates
 
-## Overview
+🚀 **Introducing New Features!**
 
-Greetings, fellow developers! As of today, we are thrilled to announce a series of updates for **Dev**, our cutting-edge software platform. These enhancements will empower you with new features, improved functionality, and a smoother user experience.
+Starting from **February 13, 2024**, I am thrilled to announce a series of updates for **Dev**. These updates will enhance the platform by introducing major functionalities. Today marks the release of the **socket functionality**, an inbuilt feature that allows seamless socket connections using just one line of code in **Dev**.
 
-## Key Highlights
+## Socket Functionality Highlights:
 
-1. **`update_Dev` Functionality**: Our flagship inbuilt feature, `update_Dev`, takes center stage in this release. With it, you can seamlessly update your Dev environment, ensuring that you always have access to the latest enhancements and bug fixes.
+- **Effortless Connectivity**: Establish socket connections effortlessly.
+- **Streamlined Communication**: Communicate efficiently between clients and servers.
+- **Minimal Code**: Achieve powerful socket functionality with concise code.
 
-## Stay Tuned!
+# New Features
+## Major release
 
-We're committed to continuous improvement, and this is just the beginning. Expect more exciting features and enhancements in the coming weeks. Thank you for being part of the Dev community!
+Socket Functionality: The star of this release, the socket functionality, is an inbuilt feature that simplifies socket connections using just one line of code in Dev. Whether you’re building real-time applications, chat systems, or multiplayer games, this feature streamlines communication between clients and servers.
+  
+## Socket Functionality Highlights
+  
+- Effortless Connectivity: Establish socket connections effortlessly. Say goodbye to complex setup procedures; now, it’s as simple as a single line of code.
+  
+- Streamlined Communication: Communicate efficiently between clients and servers. Whether you’re sending messages, data streams, or notifications, the socket functionality ensures smooth communication.
+  
+- Minimal Code: Achieve powerful socket functionality with concise code. We’ve abstracted away the complexities, allowing you to focus on your application logic.
 
+### Quick Start
+
+```python
+from Dev.Templates.Socket import setup_connection
+
+setup_connection.setup_socket_files()
+```
+
+## Minor Improvements
+
+- `fetch_Version()`: Fetch your current version of Dev
 ---
-
-# Latest Version: v1.0
-
-Welcome to the inaugural release of **Dev**! We're excited to introduce the following key features:
-
-1. **`update_Dev` Functionality**: Our flagship inbuilt feature, `update_Dev`, ensures that you always have access to the latest enhancements and bug fixes.(**CURRENTLY NOT WORKING PROPERLY DO NOT USE RIGHT NOW, I AM TRYING TO SOLVE THIS ISSUE!**)
 
 ## Unique Features of Dev:
 
@@ -693,6 +712,8 @@ auth_manager.register_user("john_doe", "password123")
 ---
 
 # Templates
+# Web
+
 ## Introduction
 
 **Dev's Templates** provides a streamlined starting point for Python developers to create their websites using pre-built templates. Whether you're a beginner unsure of where to begin or an experienced developer seeking a quick setup, Dev's Templates offers a beautiful dashboard and various templates to kickstart your web development journey.
@@ -745,3 +766,24 @@ sd.setup_configs()
 
 ## signup page template
 ![Alt text](samples/signup.png)
+
+
+# Socket
+
+Socket Functionality: The star of this release, the socket functionality, is an inbuilt feature that simplifies socket connections using just one line of code in Dev. Whether you’re building real-time applications, chat systems, or multiplayer games, this feature streamlines communication between clients and servers.
+  
+## Socket Functionality Highlights
+  
+- Effortless Connectivity: Establish socket connections effortlessly. Say goodbye to complex setup procedures; now, it’s as simple as a single line of code.
+  
+- Streamlined Communication: Communicate efficiently between clients and servers. Whether you’re sending messages, data streams, or notifications, the socket functionality ensures smooth communication.
+  
+- Minimal Code: Achieve powerful socket functionality with concise code. We’ve abstracted away the complexities, allowing you to focus on your application logic.
+
+### Quick Start
+
+```python
+from Dev.Templates.Socket import setup_connection
+
+setup_connection.setup_socket_files()
+```
