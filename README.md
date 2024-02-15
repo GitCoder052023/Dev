@@ -76,10 +76,20 @@ In this latest Version v1.1.0 you got one new features which is setup group conn
 
 ## Quick Start
 
+### Setup Connection
+
 ```python
 from Dev.Templates.Socket import setup_connection
 
 setup_connection.setup_socket_files()
+```
+
+### Setup Group Connection
+
+```python
+from Dev.Templates.Socket import setup_group_connection
+
+setup_group_connection.setup_group_connection()
 ```
 
 ## Unique Features of Dev:
