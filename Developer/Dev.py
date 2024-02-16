@@ -21,7 +21,7 @@ class Dev:
         self.llm = GoogleGenerativeAI(model="gemini-pro", google_api_key=key, temperature=temperature)
         pass
 
-    def debugger(self, error, prompt=None):
+    def debugger(self, error, prompt=None, dest="current"):
         # get code
         pyautogui.hotkey("ctrl", "a")
         pyautogui.hotkey("ctrl", "c")
@@ -46,13 +46,20 @@ class Dev:
             # reformat code
             rcd = remove_first_and_last_lines(mcd)
 
-            # write modified code
-            pyautogui.write(rcd)
+            if dest == "current":
+                # write modified code
+                pyautogui.write(rcd)
 
-            # finally format code
-            pyautogui.hotkey("ctrl", "alt", "l")
-            pyautogui.hotkey("ctrl", "alt", "shift", "l")
-            pyautogui.press("enter")
+                # finally format code
+                pyautogui.hotkey("ctrl", "alt", "l")
+                pyautogui.hotkey("ctrl", "alt", "shift", "l")
+                pyautogui.press("enter")
+
+            if dest == "separate":
+                with open("debugged code.py", "w") as gene:
+                    gene.write(rcd)
+
+
 
         else:
             mcd = self.llm.invoke(f"{prompt}, This is my code {pyperclip.paste()}")
@@ -64,13 +71,18 @@ class Dev:
             # reformat code
             rcd = remove_first_and_last_lines(mcd)
 
-            # write modified code
-            pyautogui.typewrite(rcd)
+            if dest == "current":
+                # write modified code
+                pyautogui.typewrite(rcd)
 
-            # finally format code
-            pyautogui.hotkey("ctrl", "alt", "l")
-            pyautogui.hotkey("ctrl", "alt", "shift", "l")
-            pyautogui.press("enter")
+                # finally format code
+                pyautogui.hotkey("ctrl", "alt", "l")
+                pyautogui.hotkey("ctrl", "alt", "shift", "l")
+                pyautogui.press("enter")
+
+            if dest == "separate":
+                with open("debugged code.py", "w") as gene:
+                    gene.write(rcd)
 
     def upload_git(self, gitname, reponame):
         pyautogui.hotkey('ctrl', 'alt', 't')
@@ -131,18 +143,23 @@ class Dev:
         pyautogui.press('enter')
         time.sleep(5)  # Adjust for push time
 
-    def generate(self, prompt):
+    def generate(self, prompt, dest="current"):
         cd = self.llm.invoke(prompt)
 
         rcd = remove_first_and_last_lines(cd)
 
-        # write modified code
-        pyautogui.write(rcd)
+        if dest == "current":
+            # write modified code
+            pyautogui.write(rcd)
 
-        # finally format code
-        pyautogui.hotkey("ctrl", "alt", "l")
-        pyautogui.hotkey("ctrl", "alt", "shift", "l")
-        pyautogui.press("enter")
+            # finally format code
+            pyautogui.hotkey("ctrl", "alt", "l")
+            pyautogui.hotkey("ctrl", "alt", "shift", "l")
+            pyautogui.press("enter")
+
+        if dest == "separate":
+            with open("generated code.py", "w") as gene:
+                gene.write(rcd)
 
     def review(self):
         pyautogui.hotkey("ctrl", "a")
@@ -227,7 +244,7 @@ class Dev:
             # Optionally, write some content to the file
             file.write(cd)
 
-    def modify(self, prompt):
+    def modify(self, prompt, dest="current"):
         pyautogui.hotkey("ctrl", "a")
         pyautogui.hotkey("ctrl", "c")
         time.sleep(0.1)
@@ -236,25 +253,29 @@ class Dev:
         mcd = self.llm.invoke(f"""{prompt}, this is a code: {copied_text}
                         """)
 
-        # clear previous code
-        pyautogui.hotkey("ctrl", "a")
-        pyautogui.press('/')
-        pyautogui.leftClick()
-        pyautogui.hotkey("ctrl", "a")
-        pyautogui.press('down')
-        pyautogui.press("enter")
-
-
-        # reformat code
         rcd = remove_first_and_last_lines(mcd)
 
-        # write modified code
-        pyautogui.write(rcd)
+        if dest == "current":
 
-        # finally format code
-        pyautogui.hotkey("ctrl", "alt", "l")
-        pyautogui.hotkey("ctrl", "alt", "shift", "l")
-        pyautogui.press("enter")
+            # clear previous code
+            pyautogui.hotkey("ctrl", "a")
+            pyautogui.press('/')
+            pyautogui.leftClick()
+            pyautogui.hotkey("ctrl", "a")
+            pyautogui.press('down')
+            pyautogui.press("enter")
+
+            # write modified code
+            pyautogui.write(rcd)
+
+            # finally format code
+            pyautogui.hotkey("ctrl", "alt", "l")
+            pyautogui.hotkey("ctrl", "alt", "shift", "l")
+            pyautogui.press("enter")
+
+        if dest == "separate":
+            with open("modified code.py", "w") as gene:
+                gene.write(rcd)
 
     def trans(self, filename, target: str = "Java"):
         # get code
@@ -321,8 +342,3 @@ def hello_world():
 
     def Fetch_Version(self):
         return "v1.1.0"
-
-
-
-
-
