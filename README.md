@@ -177,7 +177,7 @@ Debugger provides a powerful tool for developers to streamline their debugging p
 **Methods**:
 - `dest`: Select the destination of new code as per your need
   * `dest="current"`: for writing debugged code in your current file
-  * `dest="separate"`: for writing debugged code in new brand new file **(Superior choice for serious, large, complex codes)**
+  * `dest="separate"`: for writing debugged code in new brand new file **(Superior choice for serious, large, and complex codes)**
 
 
 **Key Components:**
@@ -335,7 +335,7 @@ This functionality leverages the language model to generate code based on your i
 **Methods**:
 - `dest`: Select the destination of new code as per your need
   * `dest="current"`: for writing generated code in your current file
-  * `dest="separate"`: for writing generated code in new brand new file **(Superior choice for serious, large, complex codes)**
+  * `dest="separate"`: for writing generated code in new brand new file **(Superior choice for serious, large, and complex codes)**
 
 **Usage:**
 
@@ -525,7 +525,7 @@ This functionality empowers you to directly modify your code within your code ed
 **Methods**:
 - `dest`: Select the destination of new code as per your need
   * `dest="current"`: for writing modified code in your current file
-  * `dest="separate"`: for writing modified code in new brand new file **(Superior choice for serious, large, complex codes)**
+  * `dest="separate"`: for writing modified code in new brand new file **(Superior choice for serious, large, and complex codes)**
 
 **Example Usage:**
 
