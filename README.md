@@ -8,7 +8,9 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - [Announcements](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#announcements)
 - [Latest Version](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#latest-version-v110)
   * [Description](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#description)
-  * [Quick start](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#quick-start)
+  - [Quick start](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#quick-start)
+    * [Setup Connection](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#setup-connection)
+    * [Setup Group Connection](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#setup-group-connection)
 - [Features of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#unique-features-of-dev)
 - [Benefits of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#benefits-of-dev)
 - [Basic Requirements](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#basic-requirements)
@@ -76,10 +78,20 @@ In this latest Version v1.1.0 you got one new features which is setup group conn
 
 ## Quick Start
 
+### Setup Connection
+
 ```python
 from Dev.Templates.Socket import setup_connection
 
 setup_connection.setup_socket_files()
+```
+
+### Setup Group Connection
+
+```python
+from Dev.Templates.Socket import setup_group_connection
+
+setup_group_connection.setup_group_connection()
 ```
 
 ## Unique Features of Dev:
@@ -782,10 +794,20 @@ Socket Functionality: The star of this release, the socket functionality, is an 
   
 - Minimal Code: Achieve powerful socket functionality with concise code. We’ve abstracted away the complexities, allowing you to focus on your application logic.
 
-### Quick Start
+## Quick Start
+
+### Setup Connection
 
 ```python
 from Dev.Templates.Socket import setup_connection
 
 setup_connection.setup_socket_files()
+```
+
+### Setup Group Connection
+
+```python
+from Dev.Templates.Socket import setup_group_connection
+
+setup_group_connection.setup_group_connection()
 ```
