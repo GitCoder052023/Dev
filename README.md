@@ -162,9 +162,6 @@ assistant.generate("write a python code which can print 0 to 100")
 
 Dev is your comprehensive coding companion. Whether you're a seasoned developer looking for a productivity boost or a beginner seeking guidance, Dev has something to offer. Embrace the power of AI and watch your coding workflow reach new heights of efficiency and effectiveness.
 
-# Ongoing Developments
-- **API Generator:** **(UNDER PLANNING)**
-
 # Developer
 
 ## Debugger
@@ -176,6 +173,11 @@ Debugger provides a powerful tool for developers to streamline their debugging p
 - Automatically retrieves code from the clipboard for seamless debugging.
 - Generates potential fixes based on AI-powered insights.
 - Automatically apply fixes within the code editor.
+
+**Methods**:
+- `dest`: Select the destination of new code as per your need
+  * `dest="current"`: for writing debugged code in your current file
+  * `dest="separate"`: for writing debugged code in new brand new file **(Superior choice for serious, large, complex codes)**
 
 
 **Key Components:**
@@ -329,6 +331,11 @@ dev.rename_github_repo("my-old-repo", "my-new-repo)
 ## Generate:
 
 This functionality leverages the language model to generate code based on your instructions or prompts.
+
+**Methods**:
+- `dest`: Select the destination of new code as per your need
+  * `dest="current"`: for writing generated code in your current file
+  * `dest="separate"`: for writing generated code in new brand new file **(Superior choice for serious, large, complex codes)**
 
 **Usage:**
 
@@ -493,9 +500,6 @@ dev.Generate_UI()
 A new index.html file containing the generated UI with inline CSS will be created.
 The file will automatically open in your default browser for immediate preview.
 
----
-# Beta Functions
-
 ## Modify:
 This functionality empowers you to directly modify your code within your code editor, leveraging the power of large language models for enhanced efficiency and quality.
 
@@ -517,6 +521,11 @@ This functionality empowers you to directly modify your code within your code ed
 - Save time: Quickly iterate and experiment with code modifications without manual editing.
 - Improve code quality: Gain valuable insights and suggestions for cleaner, more efficient code.
 - Boost creativity: Explore new possibilities and approaches with AI-powered guidance.
+
+**Methods**:
+- `dest`: Select the destination of new code as per your need
+  * `dest="current"`: for writing modified code in your current file
+  * `dest="separate"`: for writing modified code in new brand new file **(Superior choice for serious, large, complex codes)**
 
 **Example Usage:**
 
