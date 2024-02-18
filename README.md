@@ -121,6 +121,10 @@ setup_group_connection.setup_group_connection()
 - Enhanced Creativity: Explore new possibilities with code generation, sparking innovation and overcoming coding hurdles.
 - Streamlined Workflow: Integrate seamlessly with Git for effortless project management, allowing you to focus on what matters most - writing great code.
 
+## Ongoing Developments
+- Building app templates for kivy, tkinker, PyQT
+- Building API templates for building APIs using FastAPI
+
 ## Basic requirements:
 - Windows 10 (Supports only windows)
 - Python 3.10
