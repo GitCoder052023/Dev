@@ -129,7 +129,7 @@ setup_group_connection.setup_group_connection()
 
 ## Basic requirements:
 - Windows 10 (Supports only windows)
-- Python 3.10
+- Python 3.9+
 
 
 ## Getting Started:
