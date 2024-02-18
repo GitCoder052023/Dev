@@ -16,6 +16,7 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - [Ongoing Developments](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#ongoing-developments)
 - [Basic Requirements](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#basic-requirements)
 - [Getting Started](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#getting-started)
+  * [Quick Start](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#quick-start-1)
 - [Developer](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#developer)
   * [Debugger](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#debugger)
   * [Readme Generator](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#readme-generator)
@@ -155,7 +156,7 @@ export GOOGLE_API_KEY=YOUR_API_KEY
 ```python
 from Dev.Developer import Dev
 
-assistant = Dev.Dev("YOUR GOOGLE GEMINI API KEY")
+assistant = Dev.Dev("YOUR GOOGLE GEMINI API KEY") # You can leave this as it is if you don't want to use debug, generate and other generation tools of Dev
 
 assistant.generate("write a python code which can print 0 to 100")
 ```
