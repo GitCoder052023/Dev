@@ -13,6 +13,7 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
     * [Setup Group Connection](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#setup-group-connection)
 - [Features of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#unique-features-of-dev)
 - [Benefits of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#benefits-of-dev)
+- [Ongoing Developments](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#ongoing-developments)
 - [Basic Requirements](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#basic-requirements)
 - [Getting Started](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#getting-started)
 - [Developer](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#developer)
@@ -148,11 +149,6 @@ pip install -r requirements.txt
 Get your google gemini API key from [here](https://makersuite.google.com/app/apikey)
 ```Bash
 export GOOGLE_API_KEY=YOUR_API_KEY
-```
-
-**Download package locally:**
-```bash
-pip install git+https://github.com/GitCoder052023/Dev.git
 ```
 
 ## Quick start
