@@ -33,25 +33,6 @@ In this latest Version v1.1.0 you got one new features which is setup group conn
 
 **Note**: But note that this feauture only builds server and client setup and very basic user interaction so you need to customise it according to your needs!
 
-
-## Quick Start
-
-### Setup Connection
-
-```python
-from Dev.Templates.Socket import setup_connection
-
-setup_connection.setup_socket_files()
-```
-
-### Setup Group Connection
-
-```python
-from Dev.Templates.Socket import setup_group_connection
-
-setup_group_connection.setup_group_connection()
-```
-
 ## Unique Features of Dev:
 
 - AI-powered Debugging: Stuck on a coding bug? Dev can analyze your code with the help of a large language model, identify the error, and suggest corrections. Simply provide the error message or a specific prompt for tailored debugging assistance.
