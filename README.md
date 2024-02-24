@@ -120,3 +120,5 @@ assistant.generate("write a python code which can print 0 to 100")
 Dev is your comprehensive coding companion. Whether you're a seasoned developer looking for a productivity boost or a beginner seeking guidance, Dev has something to offer. Embrace the power of AI and watch your coding workflow reach new heights of efficiency and effectiveness.
 
 # Checkout Documentation of Dev
+
+### [Read Documentation](https://github.com/GitCoder052023/Dev/blob/main/Documentation.ipynb)
