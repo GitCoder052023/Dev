@@ -82,7 +82,7 @@ assistant.generate("write a python code which can print 0 to 100")
 
 # Checkout Documentation of Dev
 
-[Read Documentation](https://jovian.com/k-alam93899/documentation)
+Click on this --> [Read Documentation](https://jovian.com/k-alam93899/documentation) link to read documentation of Dev
 
 # Announcements
 
