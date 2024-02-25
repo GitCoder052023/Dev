@@ -1,5 +1,17 @@
 # Dev: Your AI-Powered Coding Assistant
 
+# Table of contents
+- [Introduction](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#introduction)
+- [Features of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#unique-features-of-dev)
+- [Benefits of Dev](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#benefits-of-dev)
+- [Ongoing Developments](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#ongoing-developments)
+- [Basic Requirements](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#basic-requirements)
+- [Get started](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#getting-started)
+- [Quick Start](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#quick-start)
+- [Documentation](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#checkout-documentation-of-dev)
+- [Updates](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#dev-updates)
+- [Latest version](https://github.com/GitCoder052023/Dev?tab=readme-ov-file#latest-version-v110)
+
 # Introduction
 Dev is a multi-purpose tool designed to streamline your coding workflow and leverage the power of large language models to enhance your productivity. It automates several common tasks and provides valuable insights through AI capabilities, making your coding experience smoother and more efficient.
 
