@@ -51,8 +51,10 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - Python 3.9+
 
 
-# Getting Started:
-**1: Clone repo:**
+# Getting Started
+## 1: Clone Dev locally
+
+**Clone repo:**
 1: clone repo
 ```bash
 git clone https://github.com/GitCoder052023/Dev.git
@@ -71,7 +73,7 @@ Get your google gemini API key from [here](https://makersuite.google.com/app/api
 export GOOGLE_API_KEY=YOUR_API_KEY
 ```
 
-**2: Install Dev using pip (Recommended!)**
+## 2: Install Dev using pip (Recommended!)
 ```bash
 pip install git+https://github.com/GitCoder052023/Dev
 ```
