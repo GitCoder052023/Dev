@@ -5,19 +5,19 @@ new_loc = loc.replace("\\", "/")
 
 
 def get_configs(filename):
-    with open(f"{new_loc}/Dev/Templates/Web/configs/HTML/{filename}", "r", encoding="utf-8") as file:
+    with open(f"{new_loc}/Dev/Dev_Templates/Web/configs/HTML/{filename}", "r", encoding="utf-8") as file:
         html_content = file.read()
     return html_content
 
 
 def fetch_configs():
-    return os.listdir(f"{new_loc}/Dev/Templates/configs/HTML/")
+    return os.listdir(f"{new_loc}/Dev/Dev_Templates/configs/HTML/")
 
 
 def setup_configs():
     flask_app = """
 from flask import Flask, render_template
-import Dev.Templates.setup_templates as ds
+import Dev.Dev_Templates.setup_templates as ds
 import os
 
 app = Flask(__name__)
