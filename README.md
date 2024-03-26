@@ -51,7 +51,9 @@ Dev is a multi-purpose tool designed to streamline your coding workflow and leve
 - Python 3.9+
 
 
-# Getting Started:
+# Getting Started
+## 1: Clone Dev locally
+
 **Clone repo:**
 1: clone repo
 ```bash
@@ -71,13 +73,41 @@ Get your google gemini API key from [here](https://makersuite.google.com/app/api
 export GOOGLE_API_KEY=YOUR_API_KEY
 ```
 
+## 2: Install Dev using pip (Recommended!)
+```bash
+pip install git+https://github.com/GitCoder052023/Dev
+```
+
+
 # Quick start
+## For those who cloned Dev locally
+
 ```python
-from Dev.Developer import Dev
+from Dev.Dev_Developer import Dev
 
 assistant = Dev.Dev("YOUR GOOGLE GEMINI API KEY") # You can leave this as it is if you don't want to use debug, generate and other generation tools of Dev
 
 assistant.generate("write a python code which can print 0 to 100")
+```
+
+## For those who installed Dev using pip
+
+```python
+from Dev_Developer import Dev
+
+assistant = Dev.Dev("YOUR GEMINI API KEY") # You can leave this as it is if you don't want to use debug, generate and other generation tools of Dev
+
+assistant.generate("write a python code which can print 0 to 100")
+```
+
+## Important
+
+**If you installed Dev through pip then import Developer and Manager like this:**
+
+```python
+from Dev_Developer.Dev import Dev
+from Dev_Managers.User_manager import DB_manager
+from Dev_Managers.Auth_manager import DevAuth
 ```
 
 # Checkout Documentation of Dev
