@@ -1,11 +1,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='Debugger',  # Name of the package
-    version='0.1.0',  # Initial version
+    name='Dev',  # Name of the package
+    version='1.1.0',  # Initial version
     author='GitCoder052023',  # Author's name
     author_email='K.alam93899@gmail.com',  # Author's email (replace with yours)
-    description='A tool to debug your code using AI',
+    description='Dev is a multi-purpose tool designed to streamline your coding workflow and leverage the power of '
+                'large language models to enhance your productivity. It automates several common tasks and provides '
+                'valuable insights through AI capabilities, making your coding experience smoother and more efficient.',
     packages=find_packages(),  # Automatically find packages in the directory
     install_requires=[
         'pyperclip',
